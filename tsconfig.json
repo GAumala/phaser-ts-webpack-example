@@ -6,7 +6,6 @@
     "module": "es6",
     "target": "es6",
     "allowJs": true,
-    "checkJs": true,
     "types":["phaser-ce"]
   },
   "include": ["src"],

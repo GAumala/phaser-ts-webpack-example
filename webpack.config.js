@@ -7,7 +7,7 @@ const phaser = path.join(phaserModule, 'build/custom/phaser-split.js'),
   p2 = path.join(phaserModule, 'build/custom/p2.js');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist'
@@ -24,7 +24,7 @@ module.exports = {
         use: 'script-loader'
       },
       {
-        test: /\.(j|t)s$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/
       }
